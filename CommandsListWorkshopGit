@@ -80,6 +80,9 @@ semua yg match bakal dipindahin
 ex cp *.txt .\tesDir\
 command ini utk copy semua file txt di directory ke folder tesDir
 
+# code . 
+utk ngebuka visual studio code
+
 -------------------------------------
 SHORTCUTS 
 # klik 'esc'
@@ -88,6 +91,7 @@ utk ngapus command, kalo ada yg salah
 # Ctrl + W 
 ngapus sebagian command 
 
+# Ctrl + `
 
 
 =========================================
