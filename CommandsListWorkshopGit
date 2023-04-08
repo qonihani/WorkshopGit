@@ -1,0 +1,101 @@
+Commands List
+
+# pwd 
+ print working directory
+
+# cd
+change directory
+
+# ~
+reset path 
+
+# cd ~
+balik lagi ke path sebelumnya
+
+# ..
+ke source folder sebelumnya 
+misal C:\Users\Asus\Documents\workshopGit
+kalo dr workshopGit ake cd .. jadi ke folder 'Documents'
+
+# New-Item (khusus windows)
+bikin file baru di folder itu
+New-Item (nama file.format)
+cuma bisa yg extension .txt
+
+bikin folder baru di dalem folder 
+New-Item .\destination folder\nama file.format 
+New-Item .\testDir\test3.txt
+
+# mkdir (nama folder)
+bikin folder baru 
+eg: mkdir .\testDir\ 
+kalo nama foldernya pake spasi dianggap sebagai command yg berbeda 
+
+#cat 
+menampilkan file 
+cat .\test.txt\
+
+# echo 
+utk ngeprint text 
+echo "test echo" -> nanti ke print di command line 
+test echo
+
+# > 
+masukin text ke file 
+kalo udh ada isinya -> ganti isi file 
+
+# >>
+tambahin text ke file di baris paling bawah 
+
+utk masukin text ke text file ujungnya tambahin (nama file) >> .\test2.txt
+echo "test echo">> .\test2.txt
+
+# rm (file)
+remove file
+rm .\test.txt 
+
+# rmdir 
+utk remove folder yg kosong 
+rmdir .\testDir\
+kalo di folder ada isinya nanti windows nanya confirmation
+
+# rm -r 
+untuk folder yg ada isinya biar lgsg ke delete pake:
+rm -r .\testDir\
+
+#rm -rf 
+untuk menghapus semua file dan folder (force)
+!!! BAHAYA!! 
+
+#cp 
+copy file 
+cp .\nama file.format .\destination folder\
+cp .\test.txt .\testDir\
+
+#ls
+utk ngelist folder dan dan file yg ada di directory kita 
+
+# *
+semua yg match bakal dipindahin 
+ex cp *.txt .\tesDir\
+command ini utk copy semua file txt di directory ke folder tesDir
+
+-------------------------------------
+SHORTCUTS 
+# klik 'esc'
+utk ngapus command, kalo ada yg salah 
+
+# Ctrl + W 
+ngapus sebagian command 
+
+
+
+=========================================
+# directory awal workshopGit
+PS C:\Users> cd C:\Users\Asus\Documents\workshopGit
+
+# change directory ke folder tesDir 
+PS C:\Users\Asus\Documents\workshopGit> cd .\tesDir
+
+# copy file test3.txt ke folder tempat tesDir (workshopGit)
+PS C:\Users\Asus\Documents\workshopGit\tesDir> cp .\test3.txt ../
